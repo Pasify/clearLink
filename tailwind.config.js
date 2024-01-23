@@ -13,6 +13,7 @@ module.exports = {
         textColorGreySub: "#475467",
         textColorDark: "#101828",
         accordion: "#F9FAFB",
+        accordionBorder: "##EAECF0",
         nav: "#F2F4F7",
         borderColor: "#98A2B3",
       },

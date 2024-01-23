@@ -2,66 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+header {
+    height: calc(100dvh - 2.5rem);
+    outline: 2px solid red;
+}
+
+
+
+
+
 .custom-list li {
     background-image: url('../assets/checkIcon.png');
     background-repeat: no-repeat;
     background-position: 0 0;
     padding-left: 2rem;
-    /* Adjust based on image size */
-    background-size: 1.5rem;
-    /* Adjust based on your preference */
+    background-size: 1rem;
     line-height: 1.5rem;
+
 }
 
 footer {
-    padding: 20px;
+    /* padding: 20px; */
     color: #333;
-    /* Adjust as needed */
+
 }
 
-.footer-top,
-.footer-bottom {
+.footer-top {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .footer-logo,
-.footer-links,
 .footer-app {
-    flex: 1;
-    min-width: 250px;
-    /* Adjust minimum width as needed */
-    padding: 10px;
+    /* flex: 1; */
+    min-width: 200px;
+
 }
 
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
-    gap: 10px;
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
 }
 
 .link-section ul {
     list-style-type: none;
     padding: 0;
+    text-transform: capitalize;
 }
 
 .link-section li a {
     color: inherit;
-
     text-decoration: none;
 }
 
 .footer-bottom {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .social-links img {
     width: 20px;
     height: 20px;
 }
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -72,7 +80,8 @@ footer {
         align-items: start;
     }
 
+    /* 
     .footer-links {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
+    } */
 }
