@@ -1,0 +1,19 @@
+{
+  "name": "talentsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "runner": "npm-run-all -p server tailwind"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  }
+}
