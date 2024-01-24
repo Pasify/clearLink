@@ -4,13 +4,18 @@
 
 
 
-header {
+/* header {
     height: calc(100dvh - 2.5rem);
-    outline: 2px solid red;
+} */
+
+.nav {
+    width: 100%;
 }
 
+.menu {
 
-
+    height: auto;
+}
 
 
 .custom-list li {
@@ -24,7 +29,6 @@ header {
 }
 
 footer {
-    /* padding: 20px; */
     color: #333;
 
 }
@@ -38,15 +42,9 @@ footer {
 
 .footer-logo,
 .footer-app {
-    /* flex: 1; */
+
     min-width: 200px;
 
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
 }
 
 .link-section ul {
@@ -70,7 +68,6 @@ footer {
 }
 
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
@@ -80,8 +77,4 @@ footer {
         align-items: start;
     }
 
-    /* 
-    .footer-links {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    } */
 }
